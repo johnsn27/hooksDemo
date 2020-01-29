@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-function HookExample() {
+function HookExample(props) {
   // Declare a new state variable, which we'll call "count"
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(props.count || 0);
 
   return (
     <div>
